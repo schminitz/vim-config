@@ -14,6 +14,18 @@ filetype on
 so $HOME/.vim/filetype.vim
 "-----------------
 
+"------------
+" Pathogen load
+" -------------
+filetype off
+
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
+syntax on
+
+" -------------
 "Configure tagbar
 "-------------------------
 "See tagbar.vim, I alredy modified it
@@ -74,9 +86,13 @@ set smartindent
 set autochdir
 "Show line number on status
 set ruler
+
+"python-mode is doing this
+"Show lines wrapped when reach right of the screen
+"set wrap
 "Dont show lines wrapped when reach right of the screen
 "set nowrap
-"
+
 "Vim yank into mac clipboard too
 "set clipboard=unnamed
 
@@ -104,17 +120,6 @@ set hlsearch
 iab pdb import pdb;pdb.set_trace()
 iab pdbe <CR>try:<CR><BS>except Exception, e:<CR>e = e<CR>import pdb<CR>pdb.set_trace()
 iab itrans <span i18n:translate="">
-"------------
-" Pathogen load
-" -------------
-filetype off
-
-call pathogen#infect()
-call pathogen#helptags()
-
-filetype plugin indent on
-syntax on
-" -------------
 
 "Highlight trailing whitespace and tabs
 " (Need to be load after pathogen and so python-mode)
@@ -130,6 +135,10 @@ au InsertLeave * match ExtraWhitespace /\s\+$\|\ze\t/
 set undofile
 set undodir=~/.vim/undofiles
 " --------------------------------------------------
+
+" Configure python-mode
+" =====================
+let g:pymode_rope = 0
 
 " FOLLOWING COMMENTED CAUSE OF python-mode BUNDLE DOING THIS
 " ==========================================================

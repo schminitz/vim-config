@@ -5,6 +5,8 @@ noremap f d
 "Remap F to J
 "------------
 noremap j f
+noremap <S-j> <S-f>
+noremap <S-k> <S-j>
 
 "Remap K to Z for Folding
 "------------
