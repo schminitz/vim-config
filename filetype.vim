@@ -1,6 +1,8 @@
 "Example to add some filetype detection:
 "au BufRead *.pt set syn=html ft=html
 
+au BufRead *.txt set syn=text
+
 augroup filetypedetect
 au BufNewFile,BufRead *.txt call s:FTrobot()
 
@@ -23,7 +25,6 @@ au BufRead ~/.tmp/mutt* set tw=72
 au BufRead /tmp/cadaver* set syn=html ft=html
 au BufRead *.dtml set syn=html ft=html
 au BufRead *.zpt set syn=html ft=html
-au BufRead *.txt set syn=text
 au BufRead *.prop set syn=cfg ft=cfg
 au BufRead *.form set syn=cfg ft=cfg
 au BufRead *.pp set syn=puppet ft=puppet
