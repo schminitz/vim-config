@@ -68,8 +68,8 @@ map <S-B> :BufExplorer<CR>
 " Window resizing
 "----------------
 
-noremap + :resize 9999<bar>vertical resize 9999<CR>
-noremap = <C-w>=
+nnoremap + :resize 9999<bar>vertical resize 9999<CR>
+nnoremap = <C-w>=
 
 " Copy paste trough different vims
 "---------------------------------
