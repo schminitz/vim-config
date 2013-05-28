@@ -78,7 +78,7 @@ set ruler
 "set nowrap
 "
 "Vim yank into mac clipboard too
-"set clipboard=unnamed
+set clipboard=unnamedplus
 
 "--------------------------
 
@@ -126,10 +126,15 @@ au InsertLeave * match ExtraWhitespace /\s\+$\|\ze\t/
 "--------------------------------------
 
 " Allow undo even when closed file (persistant undo)
-" ==================================================
+" --------------------------------------------------
 set undofile
 set undodir=~/.vim/undofiles
 " --------------------------------------------------
+
+" Do not save .swp files in current dir (used for dropbox)
+" --------------------------------------------------------
+set dir=~/tmp,/var/tmp,/tmp
+" --------------------------------------------------------
 
 " FOLLOWING COMMENTED CAUSE OF python-mode BUNDLE DOING THIS
 " ==========================================================
