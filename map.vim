@@ -5,6 +5,8 @@ noremap f d
 "Remap F to J
 "------------
 noremap j f
+noremap <S-j> <S-f>
+noremap <S-k> <S-j>
 
 "Remap K to Z for Folding
 "------------
@@ -62,6 +64,12 @@ noremap <S-l> :NERDTreeFind<CR>
 "------------
 map <S-B> :BufExplorer<CR>
 "------------
+
+" Window resizing
+"----------------
+
+nnoremap + :resize 9999<bar>vertical resize 9999<CR>
+nnoremap = <C-w>=
 
 " Copy paste trough different vims
 "---------------------------------
