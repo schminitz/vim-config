@@ -13,4 +13,8 @@ echo "so \$HOME/.vim/vimrc.vim" > .vimrc
 
 rm -rf .vim
 git clone git@github.com:schminitz/vim-config.git .vim
+sudo apt-get install exuberant-ctags
+
+cd .vim/bundle
+git clone git://github.com/klen/python-mode.git
 ```
