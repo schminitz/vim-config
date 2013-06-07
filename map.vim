@@ -17,6 +17,9 @@ noremap kz zk
 "Open/close fold with space bar
 nnoremap <space> za
 vnoremap <space> za
+"Fold/unfold all with H
+noremap h zR
+noremap <S-h> zM
 
 
 "Map arrow movement
