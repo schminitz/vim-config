@@ -1,6 +1,7 @@
 "Add mapping file
 "----------------
 so $HOME/.vim/map.vim
+so $HOME/.vim/tabline.vim
 "----------------
 
 "Add indent files
