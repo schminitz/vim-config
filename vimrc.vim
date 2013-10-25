@@ -166,3 +166,7 @@ let g:pymode_rope = 0
 "setlocal foldmethod=syntax
 "set foldnestmax=2
 "-------
+
+" Hiding message mode and some other stuff like when typing '^p'
+" --------------------------------------------------------------
+"set noshowmode
