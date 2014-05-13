@@ -18,6 +18,7 @@ endfunc
 
 augroup END
 
+au BufRead *.robot set syn=robot ft=robot
 au BufRead *.pp set syn=puppet ft=puppet
 au BufRead *.pt set syn=html ft=html
 au BufRead *.zcml set syn=xml ft=xml
