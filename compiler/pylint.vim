@@ -73,12 +73,13 @@ CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ %)
 " %-G... - remove all remaining report lines from quickfix buffer
 CompilerSet efm=%+P[%f],%t:\ %#%l:%m,%Z,%+IYour\ code%m,%Z,%-G%.%#
 
-if g:pylint_onwrite
-    augroup python
-        au!
-        au BufWritePost * call Pylint(1)
-    augroup end
-endif
+"" gillian deactivated
+""if g:pylint_onwrite
+""    augroup python
+""        au!
+""        au BufWritePost * call Pylint(1)
+""    augroup end
+""endif
 
 function! Pylint(writing)
     if !a:writing && &modified

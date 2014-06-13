@@ -76,9 +76,7 @@ nnoremap = <C-w>=
 
 " Copy paste trough different vims (macvim)
 "------------------------------------------
-"set clipboard=unnamed
-nmap <F2> :.w !pbcopy<CR><CR>
-vmap <F2> :w !pbcopy<CR><CR>
+set clipboard=unnamed
 "map <C-c> "*y<CR>
 "noremap y "*y
 "nnoremap yy "*yy

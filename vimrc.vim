@@ -95,7 +95,7 @@ set ruler
 "set nowrap
 
 "Vim yank into mac clipboard too
-"set clipboard=unnamedplus
+"set clipboard=unnamed
 
 "--------------------------
 
