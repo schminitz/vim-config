@@ -1,0 +1,3 @@
+[submodule "bundle/closetag.vim"]
+	path = bundle/closetag.vim
+	url = https://github.com/mpeeters/closetag.vim.git
