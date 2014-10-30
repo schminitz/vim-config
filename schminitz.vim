@@ -17,3 +17,4 @@ let g:tagbar_left = 1
 "-------------------------
 
 source ~/.vim/map.vim
+set ignorecase
