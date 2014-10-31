@@ -16,5 +16,7 @@ let g:tagbar_sort = 0
 let g:tagbar_left = 1
 "-------------------------
 
+iab pdb import pdb;pdb.set_trace()
+
 source ~/.vim/map.vim
 set ignorecase
