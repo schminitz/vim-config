@@ -2,7 +2,7 @@
 """
 <+ MODULE +>
 
-Created by mpeeters
+Created by schminitz
 Licensed under the GPL license, see LICENCE.txt for more details.
 Copyright by Affinitic sprl
 """
