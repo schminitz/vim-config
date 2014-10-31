@@ -7,3 +7,6 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = https://github.com/mpeeters/closetag.vim.git
+[submodule "bundle/EnhancedCommentify"]
+	path = bundle/EnhancedCommentify
+	url = https://github.com/hrp/EnhancedCommentify.git
