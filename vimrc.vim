@@ -140,7 +140,7 @@ set ttyfast
 " Customize the wildmenu
 set wildmenu
 set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
-set wildmode=list:full
+"set wildmode=list:full
 
 
 " Go with smartindent if there is no plugin indent file.
@@ -324,7 +324,7 @@ autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 col
 
 " zcml
 " ----
-autocmd BufNewFile,BufRead *.zcml setlocal ft=zcml syn=xml
+autocmd BufNewFile,BufRead *.zcml setlocal ft=xml syn=xml
 autocmd FileType zcml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79
 
 " vim

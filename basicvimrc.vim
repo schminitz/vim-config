@@ -108,7 +108,7 @@ set ttyfast
 " Customize the wildmenu
 set wildmenu
 set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
-set wildmode=list:full
+"set wildmode=list:full
 
 
 " Go with smartindent if there is no plugin indent file.
