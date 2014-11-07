@@ -9,8 +9,8 @@ nnoremap <c-j> /<+.\{-1,}+><cr>c/+>/e<cr>
 inoremap <c-j> <ESC>/<+.\{-1,}+><cr>c/+>/e<cr>
 
 
-highlight ExtraWhitespace ctermbg=darkred guibg=#382424
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace term=reverse cterm=reverse ctermfg=240 ctermbg=230
+autocmd ColorScheme * highlight ExtraWhitespace term=reverse cterm=reverse ctermfg=240 ctermbg=230
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\t/
 " the above flashes annoyingly while typing, be calmer in insert mode
 autocmd InsertLeave * match ExtraWhitespace /\s\+$\|\t/
