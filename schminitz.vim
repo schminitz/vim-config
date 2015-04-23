@@ -20,3 +20,12 @@ iab pdb import pdb;pdb.set_trace()
 
 source ~/.vim/map.vim
 set ignorecase
+
+"------
+" Eclim
+"------
+"Autocompletion
+inoremap <C-@> <C-x><C-u>
+"Find reference
+noremap <C-b> :PythonSearch<CR>
+"-------------------------

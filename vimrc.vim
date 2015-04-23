@@ -191,9 +191,18 @@ function! CWD()
 endfunction
 
 " Tab Settings
-set smarttab
-set softtabstop=4
+""""""""""""""
+"Number of space for tab
 set tabstop=4
+"Number of space for <  >
+set shiftwidth=4
+"I want spaces not tabs
+set expandtab
+"How many columns tab in insert mode
+set softtabstop=4
+"Nice autoindenting
+set smartindent
+
 
 " Move to the next line
 set whichwrap=<,>
