@@ -29,6 +29,13 @@ noremap q <Left>
 noremap s <Down>
 noremap d <Right>
 
+"Map window movement
+"-------------------
+noremap <C-w><S-Left> <C-w><S-h>
+noremap <C-w><S-Down> <C-w><S-j>
+noremap <C-w><S-Up> <C-w><S-k>
+noremap <C-w><S-Right> <C-w><S-l>
+
 "Adding blank line up and down
 "-----------------------------
 nnoremap <silent><S-z> :set paste<CR>O<Esc>:set nopaste<CR>
