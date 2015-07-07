@@ -826,7 +826,7 @@ function! eclim#project#util#ProjectGrep(command, args) " {{{
           endfor
         endfor
       endif
-      silent exec a:command . ' ' . pattern . ' ' . paths
+      silent exec a:command . ' ' . pattern . 'j ' . paths
     else
       " let vim generate the proper error
       silent exec a:command . ' ' . a:args
