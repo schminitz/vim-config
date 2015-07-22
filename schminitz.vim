@@ -31,7 +31,48 @@ inoremap <C-@> <C-x><C-u>
 noremap <C-g> :PythonSearch<CR>
 noremap <C-h> :PythonSearch -x references<CR>
 " search file
-noremap <C-o> :LocateFile<CR>
+"noremap <C-o> :LocateFile<CR>
+" Le mieux serait sans doute de faire un script qui lance la commande genre:
+"
+" :call eclim#project#util#ProjectGrep('vimgrep', '/false/ src/**')
+" http://vim.wikia.com/wiki/User_input_from_a_script
+"
+
+"augroup qf
+"    autocmd!
+"    autocmd QuickFixCmdPost [^l]* cwindow
+"    autocmd QuickFixCmdPost l* lwindow
+"augroup END
+
+function! EclimGrep()
+  let search = input('Search: ')
+  let path = input('Path: ', 'src/**')
+  call eclim#project#util#ProjectGrep('vimgrep', '/' . search . '/ ' . path)
+  copen
+endfunction
+
+function! VimGrep()
+  let search = input('Search: ', expand("<cword>"))
+  let path = input('Path: ', './**')
+  execute ':noautocmd vimgrep /' . search . '/j ' . path
+  copen
+endfunction
+
+function! VimGrepRoot()
+  let search = input('Search: ', expand("<cword>"))
+  let path = input('Path: ', g:VimGrepFolder . '/**')
+  execute ':noautocmd vimgrep /' . search . '/j ' . path
+  copen
+endfunction
+
+" I need it because I use autochdir
+let g:VimGrepFolder = expand("%:p:h")
+noremap <C-o> :call VimGrep()<CR>
+noremap <C-p> :call VimGrepRoot()<CR>
+
+"noremap <C-p> :exec ":ProjectGrep /".input('Search: ')"/ ".input('Path: ', 'src/**')<CR>
+" Disable python validation
+let g:EclimFileTypeValidate = 0
 "-------------------------
 
 "---------------------
