@@ -65,10 +65,16 @@ function! VimGrepRoot()
   copen
 endfunction
 
+function! VimFindRoot()
+  execute ':e ' . g:VimGrepFolder . '/**/'
+endfunction
+
 " I need it because I use autochdir
 let g:VimGrepFolder = expand("%:p:h")
 noremap <C-o> :call VimGrep()<CR>
 noremap <C-p> :call VimGrepRoot()<CR>
+" noremap <C-i> :call VimFindRoot()<CR>
+nnoremap <C-i> :edit <C-r>=g:VimGrepFolder<CR>/**/
 
 "noremap <C-p> :exec ":ProjectGrep /".input('Search: ')"/ ".input('Path: ', 'src/**')<CR>
 " Disable python validation
